@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="main-graph">
+        <input type="date" name="date" id="date" class="graph-input">
+        <div class="template">
+            <div class="weekday-header">
+                <div>Пн</div>
+                <div class="white">Вт</div>
+                <div>Ср</div>
+                <div class="white">Чт</div>
+                <div>Пт</div>
+                <div class="white">Сб</div>
+                <div class="white">Вс</div>
+            </div>
+            <div class="box">
+                <div class="graph-month"></div>
+                <div id="contributionsGrid" class="contributions-grid"></div>
+                <div id="cubeContainer">
+                    <div class="cube-one" title="Нет контрибуций"></div>
+                    <div class="cube-two" title="1-9 контрибуций"></div>
+                    <div class="cube-three" title="10-19 контрибуций"></div>
+                    <div class="cube-four" title="20-29 контрибуций"></div>
+                    <div class="cube-five" title="30+ контрибуций"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment/min/locales.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
